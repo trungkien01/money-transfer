@@ -1,0 +1,13 @@
+.card{
+    width: 200px;
+    height: 160px;
+}
+#mainNav {
+    background-color: #212529;
+}
+#user{
+    margin-top: 30px;
+}
+.user-link{
+    text-decoration: none;
+}
