@@ -13,7 +13,7 @@
     }
 
     .div_left{
-        min-width: 300px;
+        min-width: 400px;
         text-align: center;
     }
 
@@ -24,7 +24,7 @@
     .div_right{
         margin-left: 0px;
         margin-top: 20px;
-        min-width: 300px;
+        min-width: 400px;
         text-align: center;
     }
 
@@ -39,11 +39,23 @@
     }
 
     .div_left{
+        min-width: 400px;
+        text-align: center;
+    }
 
+    .div_left-btn{
+        width: 100%;
     }
 
     .div_right{
         margin-left: 0px;
+        margin-top: 20px;
+        min-width: 400px;
+        text-align: center;
+    }
+
+    .div_right-a{
+        width: 100%;
     }
 }
 
