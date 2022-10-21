@@ -11,7 +11,9 @@
 </head>
 <body>
 <header>
-    <img src="assets/img/navbar-logo.svg" alt="..." /></a>
+    <a href="index.html">
+        <img src="assets/img/navbar-logo.svg" alt="..." /></a>
+    </a>
 </header>
 
 <div class="limiter">
@@ -21,19 +23,37 @@
                         <span class="login100-form-title-1">
                             Đăng Ký
                         </span>
-                <span style="color: #fff;">Hoàn thành bước đăng ký đơn giản và nhận ngay khoản vay 0% lãi suất</span>
+                <span style="color: #fff; text-align: center;">Hoàn thành bước đăng ký đơn giản và nhận ngay các ưu đãi khi vay!</span>
             </div>
 
             <form class="login100-form validate-form">
                 <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-                    <span class="label-input100">Họ và Tên</span>
-                    <input class="input100" type="text" name="username" placeholder="Nhập họ và tên" required>
+                    <label class="label-input100" for="username">Họ và Tên: </label>
+                    <input class="input100" type="text" name="username" id="username" placeholder="Nhập họ và tên" required>
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-                    <span class="label-input100">Số Điện Thoại</span>
-                    <input class="input100" type="number" name="pass" placeholder="Nhập số điện thoại" required>
+                    <label class="label-input100" for="number">Số Điện Thoại: </label>
+                    <input class="input100" type="number" name="number" id="number" placeholder="Nhập số điện thoại" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                    <label class="label-input100" for="email">Email: </label>
+                    <input class="input100" type="email" name="email" id="email" placeholder="Nhập email" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+                    <label class="label-input100" for="passwd">Mật khẩu: </label>
+                    <input class="input100" type="password" name="passwd" id="passwd" placeholder="Nhập số mật khẩu" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+                    <label class="label-input100" for="passwd1">Xác nhận mật khẩu: </label>
+                    <input class="input100" type="password" name="passwd1" id="passwd1" placeholder="Nhập lại mật khẩu" required>
                     <span class="focus-input100"></span>
                 </div>
 
@@ -47,7 +67,7 @@
                 <div class="btnForm">
                     <div class="container-login100-form-btn w-full div_left" style="margin-right: 10px">
                         <button class="login100-form-btn div_left-btn">
-                            Đăng nhập
+                            Đăng ký
                         </button>
                     </div>
                     <div class="container-login100-form-btn w-full div_right">
