@@ -254,23 +254,21 @@ iframe {
 [ Input ]*/
 
 .wrap-input100 {
-  width: 100%;
+  width: 90%;
   position: relative;
   border-bottom: 1px solid #b2b2b2;
 }
 
 .label-input100 {
   font-family: Poppins-Regular;
-  font-size: 15px;
-  color: #808080;
+  font-size: 17px;
+  color: #1a1e21;
   line-height: 1.2;
   text-align: right;
-
   position: absolute;
   top: 14px;
   left: -105px;
   width: 80px;
-
 }
 
 /*---------------------------------------------*/
@@ -279,7 +277,6 @@ iframe {
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
-
   display: block;
   width: 100%;
   background: transparent;

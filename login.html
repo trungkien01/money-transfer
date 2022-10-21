@@ -11,7 +11,9 @@
 </head>
 <body>
 <header>
-	<img src="assets/img/navbar-logo.svg" alt="..." /></a>
+	<a href="index.html">
+		<img src="assets/img/navbar-logo.svg" alt="..." /></a>
+	</a>
 </header>
 
 <div class="limiter">
@@ -21,25 +23,26 @@
 					<span class="login100-form-title-1">
 						Đăng Nhập
 					</span>
+				<span style="color: #fff; text-align: center">Đăng nhập ngay để vay liền tay!</span>
 			</div>
 
 			<form class="login100-form validate-form">
-				<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-					<span class="label-input100">Họ và Tên</span>
-					<input class="input100" type="text" name="username" placeholder="Nhập họ và tên" required>
+				<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+					<label class="label-input100" for="number">Số Điện Thoại: </label>
+					<input class="input100" type="number" name="number" id="number" placeholder="Nhập số điện thoại" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-					<span class="label-input100">Số Điện Thoại</span>
-					<input class="input100" type="number" name="pass" placeholder="Nhập số điện thoại" required>
+					<label class="label-input100" for="pass">Mật khẩu: </label>
+					<input class="input100" type="password" name="pass" id="pass" placeholder="Nhập mật khẩu" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="flex-sb-m w-full p-b-30">
-					<div class="contact100-form-checkbox"  style="display: flex;">
+					<div class="contact100-form-checkbox" style="display: flex;">
 						<input class="btn btn-outline-primary" id="ckb1" type="checkbox" name="remember-me">
-						<label for="ckb1" style="margin-left: 2px;">
+						<label for="ckb1" style="margin-left: 5px;">
 							Ghi nhớ
 						</label>
 					</div>
