@@ -46,6 +46,7 @@ li{
 .profit-item{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .profit-list1{
@@ -71,6 +72,23 @@ li{
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+#goTop {
+    bottom: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    position: fixed;
+    right: 100px;
+    width: 40px;
+    z-index: 1000;
+}
+
+#goTop img{
+    width: 40px;
+    height: 30px;
 }
 
 @media (max-width: 576px) {
@@ -100,6 +118,22 @@ li{
     .img-right{
         display: none;
     }
+
+    .profit-item{
+        justify-content: unset;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    #goTop{
+        right: 50px;
+        bottom: 50px;
+    }
+
+    #goTop img{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -128,6 +162,22 @@ li{
 
     .img-right{
         display: none;
+    }
+
+    .profit-item{
+        justify-content: unset;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    #goTop{
+        right: 50px;
+        bottom: 50px;
+    }
+
+    #goTop img{
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -292,19 +342,4 @@ li{
     margin-left: 10px;
 }
 
-#goTop {
-    bottom: 100px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    height: 40px;
-    position: fixed;
-    right: 100px;
-    width: 40px;
-    z-index: 1000;
-}
 
-#goTop img{
-    width: 40px;
-    height: 30px;
-}
