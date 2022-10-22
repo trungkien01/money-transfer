@@ -7,14 +7,12 @@
     <meta name="author" content="" />
     <title>Home page</title>
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body id="page-top">
-<!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
@@ -25,124 +23,283 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Tôi</a></li>
+                <li class="nav-item"><a class="nav-link" href="user.html">Tôi</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Trợ giúp</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Đăng ký</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Đăng ký</a></li>
                 <li class="nav-item"><a class="nav-link" href="login.html">Đăng nhập</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<!-- Masthead-->
+
 <header class="masthead">
-    <div class="container">
-        <div class="masthead-subheading">Welcome To Our Studio!</div>
-        <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+    <div class="container how-to-apply">
+        <div class="how-to-apply__left-top">
+            <div>
+                <div class="input_wrap">
+                    <label>Khoản vay: </label>
+                    <div>
+<!--                        <input type="text" inputmode="numeric" name="summa" id="input_summa" value="40&nbsp;000&nbsp;000" disabled>-->
+                        <span id="input_summa"></span>
+                        <span style="margin-left: 5px">VND</span>
+                    </div>
+                </div>
+
+                <div class="calculator-elem__slide text-center">
+                    <input type="range" id="slider_summa" class="slider slider1" min="1000000" max="200000000" step="1000000" value="40000000">
+                    <div class="span-Value">
+                        <div>
+                            <span>1&nbsp;000&nbsp;000</span>
+                        </div>
+                        <div>
+                            <span>200&nbsp;000&nbsp;000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="input_wrap1">
+                    <label>Số tiền thanh toán: </label>
+                    <div>
+                        <span id="input_summa1" class="input-item1"></span> VND<br>
+                        <span id="summa_discount"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rules_wrap">
+                <div class="rules_wrap-check">
+                    <input type="checkbox" id="checkBox1" name="checkBox1" style="cursor: pointer;">
+                </div>
+                <div class="rules_wrap-text">
+                    <label for="checkBox1">Tôi xác nhận rằng, tôi đã đọc, hiểu và đồng ý với nội dung<br> của
+                        <a href="#">Điều khoản và điều kiện</a>  và <a href="#">Chính sách bảo mật.</a></label>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <span class="item-span">Mã giảm giá</span>
+            </div>
+
+            <div class="text-center">
+                <a class="btn btn-primary btn-xl text-uppercase mobile-btn-DK" href="register.html">Đăng Ký Vay!</a>
+                <!--        <a class="btn btn-primary btn-xl text-uppercase" href="formRegisterLoan.html">Đăng Ký Vay!</a>-->
+            </div>
+        </div>
+
+        <div class="how-to-apply__right-top">
+            <img class="img-right" src="assets/img/anhTien.png" alt="">
+        </div>
     </div>
 </header>
-<!-- Portfolio Grid-->
+
 <section class="page-section bg-light" id="portfolio">
-    <div class="container">
+    <div class="container mrb-50px">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Thủ Tục Đơn Giản</h2>
+        </div>
+
+        <div class="row">
+            <ul class="profit-list">
+                    <div class="profit-list__half">
+                        <li class="profit-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none"><path d="M45.313 15.625H43.75v-4.688a1.56 1.56 0 0 0-1.563-1.562h-37.5A4.689 4.689 0 0 0 0 14.063v28.124c0 2.588 2.1 4.688 4.688 4.688h40.624c.86 0 1.563-.703 1.563-1.563V17.189a1.56 1.56 0 0 0-1.563-1.563z" fill="#E7ECED"/><path d="M4.688 12.5h35.937v3.125H4.687c-.859 0-1.562-.703-1.562-1.563 0-.859.703-1.562 1.563-1.562z" fill="#E7ECED"/><path d="M48.438 34.375h-9.376a4.689 4.689 0 0 1 0-9.375h9.376c.859 0 1.562.703 1.562 1.563v6.25c0 .859-.703 1.562-1.563 1.562z" fill="#36495E"/><path d="M40.03 15.625l-5.821-11.64a1.574 1.574 0 0 0-2.1-.704L7.441 15.625H40.03z" fill="#4EB176"/><path d="M3.125 15.625h30.654l-5.82-11.64a1.562 1.562 0 0 0-2.1-.694L3.125 14.658v.967z" fill="#F1D810"/></svg>
+                            <span class="span-profit-list">Nhận được đến 20 triệu đồng</span>
+                        </li>
+                    </div>
+
+
+                    <div class="profit-list__half">
+                        <li class="profit-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none"><path d="M25 50c13.807 0 25-11.193 25-25S38.807 0 25 0 0 11.193 0 25s11.193 25 25 25z" fill="#E7ECED"/><path d="M25 3.448c11.884 0 21.552 9.668 21.552 21.552S36.884 46.552 25 46.552 3.448 36.884 3.448 25 13.116 3.448 25 3.448zM25 0C11.193 0 0 11.193 0 25s11.193 25 25 25 25-11.193 25-25S38.807 0 25 0z" fill="#F1D810"/><path d="M25 5.068a.862.862 0 0 0-.862.862v.862a.862.862 0 1 0 1.724 0V5.93A.862.862 0 0 0 25 5.068zM25 42.137a.862.862 0 0 0-.862.862v.862a.862.862 0 1 0 1.724 0V43a.862.862 0 0 0-.862-.862zM43.965 24.034h-.862a.862.862 0 1 0 0 1.724h.862a.862.862 0 1 0 0-1.724zM6.897 24.034h-.863a.862.862 0 1 0 0 1.724h.863a.862.862 0 1 0 0-1.724zM37.8 10.875l-.609.61a.861.861 0 1 0 1.22 1.218l.609-.61a.861.861 0 1 0-1.22-1.218zM11.59 37.087l-.61.61a.861.861 0 1 0 1.22 1.218l.609-.609a.861.861 0 1 0-1.22-1.219zM38.41 37.087a.861.861 0 1 0-1.219 1.219l.61.61a.86.86 0 0 0 1.219 0 .861.861 0 0 0 0-1.22l-.61-.609zM12.2 10.875a.861.861 0 1 0-1.22 1.219l.61.61a.86.86 0 0 0 1.219 0 .861.861 0 0 0 0-1.22l-.61-.609z" fill="#4EB176"/><path d="M22.414 24.896h-6.897M25 22.31v-9.483M25 27.482a2.586 2.586 0 1 0 0-5.173 2.586 2.586 0 0 0 0 5.173z" stroke="#424A60" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="span-profit-list">Nhận tiền 24/7</span>
+                        </li>
+                    </div>
+
+                    <div class="profit-list__half">
+                    <li class="profit-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none"><g clip-path="url(#clip0)"><path d="M11.559 24.872l-7.115 4.856c-2.455 0-4.444-6.846-4.444-9.3 0-1.228.497-2.34 1.302-3.143a4.429 4.429 0 0 1 3.142-1.302h28.94a3.768 3.768 0 0 1 3.77 3.77v1.89" fill="#CCD5DF"/><path d="M26.886 2.586v22.286H4.84V2.586A2.586 2.586 0 0 1 7.428 0h16.87a2.587 2.587 0 0 1 2.588 2.586z" fill="#424A60"/><path d="M24.73 5.83v19.042H6.995V5.83c0-.72.585-1.305 1.305-1.305h15.124c.721 0 1.305.585 1.305 1.305z" fill="#E7ECED"/><path d="M24.73 5.83v23.621c0 .721-.585 1.305-1.305 1.305H21.58c.72 0 1.305-.584 1.305-1.305V5.83c0-.721-.585-1.305-1.305-1.305h1.845c.72 0 1.305.584 1.305 1.305z" fill="#A0A9B2"/><path d="M39.137 10.16H17.508a2.836 2.836 0 0 0-2.836 2.835v12.148a2.836 2.836 0 0 0 2.836 2.837h21.63a3.073 3.073 0 0 0 3.072-3.073V13.232a3.073 3.073 0 0 0-3.073-3.073z" fill="#A0A9B2"/><path d="M41.319 10.16h-21.63a2.836 2.836 0 0 0-2.836 2.835v12.148a2.836 2.836 0 0 0 2.837 2.837h21.628a3.073 3.073 0 0 0 3.073-3.073V13.232a3.073 3.073 0 0 0-3.072-3.073z" fill="#424A60"/><path d="M16.853 14.17h27.538v3.727H16.853V14.17z" fill="#F1D810"/><path d="M10.359 21.642h37.188v21.4H10.36v-21.4z" fill="#A0A9B2"/><path d="M12.811 21.642H50v21.4H12.811v-21.4z" fill="#4EB176"/><path d="M46.782 35.868v-7.052a3.956 3.956 0 0 1-3.955-3.956H19.984a3.955 3.955 0 0 1-3.955 3.956v7.052a3.955 3.955 0 0 1 3.955 3.955h22.843a3.955 3.955 0 0 1 3.955-3.955z" fill="#58CA86"/><path d="M41.93 33.108h-2.453a.766.766 0 1 1 0-1.533h2.453a.767.767 0 0 1 0 1.533z" fill="#4EB176"/><path d="M46.782 25.626c-.674 0-1.019-.85-.53-1.319a.774.774 0 0 1 .84-.147.77.77 0 0 1 .45.794.773.773 0 0 1-.76.672zM46.782 40.59c-.688 0-1.028-.884-.507-1.34a.776.776 0 0 1 .851-.11.773.773 0 0 1 .412.81.775.775 0 0 1-.756.64z" fill="#58CA86"/><path d="M37.154 28.641v17.59A3.768 3.768 0 0 1 33.384 50H4.444A4.444 4.444 0 0 1 0 45.555V20.428a4.444 4.444 0 0 0 4.444 4.444h28.94a3.77 3.77 0 0 1 3.77 3.77z" fill="#E7ECED"/><path d="M4.841 24.872V50h-.397A4.444 4.444 0 0 1 0 45.555V20.428a4.444 4.444 0 0 0 4.444 4.444h.397zM32.863 37.236a2.912 2.912 0 1 1-5.824 0 2.912 2.912 0 0 1 5.824 0z" fill="#A0A9B2"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h50v50H0z"/></clipPath></defs></svg>
+                        <span class="span-profit-list">Thanh toán dễ dàng</span>
+                    </li>
+                    </div>
+
+                    <div class="profit-list__half">
+                        <li class="profit-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none"><path d="M40.086 3.448v3.449h-6.034V3.448h-20.69v3.449H7.328V3.448H.43v9.483h46.552V3.448h-6.897z" fill="#F1D810"/><path d="M7.328 12.931H.43V50h46.552V12.931H7.328z" fill="#E7ECED"/><path d="M32.328 18.965h-25v25h32.759v-25h-7.76zm-7.76 1.725h6.035v6.034H24.57V20.69zm6.035 13.793H24.57v-6.035h6.034v6.035zM16.81 28.448h6.035v6.035H16.81v-6.035zm0-7.758h6.035v6.034H16.81V20.69zm-7.758 0h6.034v6.034H9.052V20.69zm0 7.758h6.034v6.035H9.052v-6.035zm6.034 13.793H9.052v-6.034h6.034v6.034zm7.759 0H16.81v-6.034h6.035v6.034zm7.758 0H24.57v-6.034h6.034v6.034zm7.759 0h-6.035v-6.034h6.035v6.034zm0-7.758h-6.035v-6.035h6.035v6.035zm-6.035-7.759V20.69h6.035v6.034h-6.035z" fill="#A0A9B2"/><path d="M13.362 0H7.328v6.897h6.034V0zM40.086 0h-6.034v6.897h6.034V0z" fill="#36495E"/><path d="M40.086 50a9.483 9.483 0 1 0 0-18.966 9.483 9.483 0 0 0 0 18.966z" fill="#4EB176"/><path d="M45.259 39.655h-4.31v-4.31c0-.517-.346-.862-.863-.862s-.862.345-.862.862v5.172c0 .517.345.862.862.862h5.173c.517 0 .862-.345.862-.862s-.345-.862-.862-.862z" fill="#fff"/></svg>
+                            <span class="span-profit-list">Gian hạn chỉ với vài bước</span>
+                        </li>
+                    </div>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <a class="btn btn-primary btn-xl text-uppercase btnVay" href="register.html">Đăng Ký Vay!</a>
+<!--        <a class="btn btn-primary btn-xl text-uppercase" href="formRegisterLoan.html">Đăng Ký Vay!</a>-->
+        </div>
+    </div>
+
+    <div class="color-rgba">
+        <div class="container mrb-50px">
+        <div class="text-center" style="margin-top: 20px">
+            <h2 class="section-heading text-uppercase">Vay Ngay!</h2>
+            <h3 class="section-subheading text-muted">Khoản vay trực tuyến phục vụ cho các mục đích của bạn</h3>
         </div>
         <div class="row">
             <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 1-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/khoinghiep.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Threads</div>
-                        <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                        <div class="portfolio-caption-heading">Khởi Nghiệp</div>
+                        <div class="portfolio-caption-subheading text-muted"></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 2-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/hoctap.jpeg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Explore</div>
-                        <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                        <div class="portfolio-caption-heading">Chi tiêu cá nhân</div>
+                        <div class="portfolio-caption-subheading text-muted"></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4">
-                <!-- Portfolio item 3-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/muasam.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Finish</div>
-                        <div class="portfolio-caption-subheading text-muted">Identity</div>
+                        <div class="portfolio-caption-heading">Mua Sắm</div>
+                        <div class="portfolio-caption-subheading text-muted"></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <!-- Portfolio item 4-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/quatang.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Lines</div>
-                        <div class="portfolio-caption-subheading text-muted">Branding</div>
+                        <div class="portfolio-caption-heading">Tặng Quà</div>
+                        <div class="portfolio-caption-subheading text-muted"></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                <!-- Portfolio item 5-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/dulich.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Southwest</div>
-                        <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                        <div class="portfolio-caption-heading">Du Lịch</div>
+                        <div class="portfolio-caption-subheading text-muted"></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <!-- Portfolio item 6-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/khambenh.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Window</div>
-                        <div class="portfolio-caption-subheading text-muted">Photography</div>
+                        <div class="portfolio-caption-heading">Khám Bệnh</div>
+                        <div class="portfolio-caption-subheading text-muted"></div>
                     </div>
                 </div>
             </div>
+
+            <div class="text-center">
+                <a class="btn btn-primary btn-xl text-uppercase btnVay" href="register.html">Đăng Ký Vay!</a>
+<!--        <a class="btn btn-primary btn-xl text-uppercase" href="formRegisterLoan.html">Đăng Ký Vay!</a>-->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container pdt-40px" style="margin-bottom: 0px;">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Dịch vụ nhanh chóng và dễ dàng</h2>
+        </div>
+
+        <div class="row">
+            <ul class="profit-list1">
+                <div class="profit-list__half1">
+                    <li class="profit-item1">
+                        <div class="text-center">
+                            <svg data-v-71cc8a4a="" width="65" height="65" viewBox="8 30 142 100" xmlns="http://www.w3.org/2000/svg" class="service__image" fill="#ffc800"><path d="M90.624 76.776a2.57 2.57 0 00-3.644 0l-4.838 4.87a6.069 6.069 0 00-4.28 0l-9.945-10.01a2.569 2.569 0 00-3.643 0 2.608 2.608 0 000 3.67l9.945 10.01a6.174 6.174 0 1011.951 2.15c0-.737-.13-1.468-.384-2.16l4.838-4.86a2.609 2.609 0 000-3.67zm-10.622 12.23a1.54 1.54 0 11-.02-3.08 1.54 1.54 0 01.02 3.08zm30.418-40.85l2.92-4.2 11.7 8.25a2.547 2.547 0 001.924.43 2.557 2.557 0 001.663-1.07c5.905-8.505 3.86-20.18-4.586-26.17a18.616 18.616 0 00-26.01 4.61 2.6 2.6 0 00.631 3.61l10.453 7.37-2.92 4.19a49.166 49.166 0 00-52.392 0l-2.92-4.19 10.453-7.37a2.6 2.6 0 00.633-3.61 18.628 18.628 0 00-26.012-4.62c-8.443 5.997-10.488 17.67-4.586 26.18.391.563.99.947 1.663 1.07a2.547 2.547 0 001.925-.43l11.7-8.25 2.92 4.2a49.974 49.974 0 003.144 80.89l-4.08 5.87a2.6 2.6 0 00.632 3.61c.43.307.947.471 1.475.47a2.574 2.574 0 002.113-1.11l4.311-6.19a49.22 49.22 0 0045.641 0l4.311 6.19a2.572 2.572 0 002.112 1.11 2.535 2.535 0 001.476-.47 2.6 2.6 0 00.632-3.61l-4.079-5.86a49.983 49.983 0 003.153-80.9zm-6.487-17.16a13.489 13.489 0 0117.156-1.36 13.687 13.687 0 014.6 16.69l-21.756-15.33zM34.32 46.326a13.687 13.687 0 014.6-16.69 13.382 13.382 0 017.738-2.45 13.536 13.536 0 019.418 3.81L34.32 46.326zm45.683 85.8a44.661 44.661 0 1144.378-44.66c.048 24.575-19.803 44.552-44.378 44.66zm0-81.32a36.661 36.661 0 1036.427 36.66c.04-20.172-16.255-36.571-36.427-36.66zm24.215 57.36l-1.74-1.75a2.57 2.57 0 00-3.645 0 2.6 2.6 0 000 3.66l1.741 1.76a31.542 31.542 0 01-17.994 7.51v-2.49a2.577 2.577 0 10-5.153 0v2.49a31.548 31.548 0 01-18-7.51l1.741-1.76a2.6 2.6 0 000-3.66 2.57 2.57 0 00-3.644 0l-1.74 1.75a31.958 31.958 0 01-7.47-18.11h2.478a2.59 2.59 0 000-5.18h-2.478a31.929 31.929 0 017.47-18.11l1.74 1.75a2.586 2.586 0 003.644-3.67l-1.74-1.75a31.553 31.553 0 0117.993-7.52v2.5a2.577 2.577 0 105.153 0v-2.5a31.559 31.559 0 0118 7.52l-1.74 1.75a2.586 2.586 0 103.643 3.67l1.74-1.75a31.93 31.93 0 017.47 18.11h-2.478a2.59 2.59 0 000 5.18h2.478a31.958 31.958 0 01-7.469 18.11z"></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <span>Lựa chọn số tiền vay, thời hạn vay.<br>Hoàn thành hồ sơ chỉ vài phút</span>
+                        </div>
+                    </li>
+                </div>
+
+
+                <div class="profit-list__half1">
+                    <li class="profit-item1">
+                        <div class="text-center">
+                            <svg data-v-71cc8a4a="" width="65" height="65" viewBox="0 20 160 120" xmlns="http://www.w3.org/2000/svg" class="service__image" fill="#ffc800"><path d="M133.68 75.987v-16.44a10.607 10.607 0 00-9.79-10.55l-15.27-26.68a10.528 10.528 0 00-14.44-3.89l-52.35 30.48h-9.19c-5.874.004-10.636 4.765-10.64 10.64v63.81c.004 5.874 4.766 10.635 10.64 10.64h90.41c5.871-.009 10.627-4.77 10.63-10.64v-16.44a7.968 7.968 0 005.32-7.49v-15.95a7.968 7.968 0 00-5.32-7.49zm-15.97-27.08H94.54l17.38-10.12 5.79 10.12zm-8.43-14.73l-25.31 14.73h-10.5l33.18-19.32 2.63 4.59zm-12.42-11.15a5.2 5.2 0 017.14 1.94l.01.01-41.11 23.93H52.4l44.46-25.88zm31.5 100.33a5.316 5.316 0 01-5.31 5.32H32.64a5.318 5.318 0 01-5.32-5.32v-63.81a5.324 5.324 0 015.32-5.32h90.41a5.322 5.322 0 015.31 5.32v15.95h-15.95a15.955 15.955 0 100 31.91h15.95v15.95zm5.32-23.93a2.659 2.659 0 01-2.66 2.66h-18.61c-5.874 0-10.635-4.762-10.635-10.635 0-5.874 4.761-10.635 10.635-10.635h18.61a2.659 2.659 0 012.66 2.66v15.95zm-21.27-13.29a5.315 5.315 0 105.32 5.32 5.324 5.324 0 00-5.32-5.32z"></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <span>Xác minh yêu cầu của bạn<br>trong thời gian ngắn</span>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="profit-list__half1">
+                    <li class="profit-item1">
+                        <div class="text-center">
+                            <svg data-v-71cc8a4a="" width="65" height="65" viewBox="0 20 160 126" xmlns="http://www.w3.org/2000/svg" class="service__image" fill="#ffc800"><path d="M14.75 64.502l25.636-28.19a13.045 13.045 0 0118.457.04 12.83 12.83 0 013.3 5.64 13.057 13.057 0 0120.461 6.82 13.073 13.073 0 0120.421 6.69l12.082-12.09c5.111-5.035 13.327-5.003 18.398.072s5.098 13.29.06 18.398l-46.42 46.46 27.532 4.32a15.29 15.29 0 0113.05 15.06c-.001 5.65-4.577 10.231-10.227 10.24H53.211a37.233 37.233 0 01-26.516-10.99l-10.725-10.74C1.83 102.075 1.292 79.31 14.75 64.502zm6.041 46.91l10.725 10.73a30.473 30.473 0 0021.695 9h64.29a3.414 3.414 0 003.408-3.42 8.451 8.451 0 00-7.247-8.31l-34.194-5.37a3.411 3.411 0 01-1.88-5.78l51.155-51.2a6.242 6.242 0 00-4.425-10.64 6.163 6.163 0 00-4.39 1.82l-34.113 34.14a3.41 3.41 0 01-4.82 0 3.429 3.429 0 01.007-4.84l13.93-13.94a6.235 6.235 0 00-8.817-8.82L72.18 68.732a3.41 3.41 0 01-4.814-4.83l7.112-7.12a6.235 6.235 0 00-8.816-8.82l-7.146 7.15c-.014.01-.006.01-.006.01H58.5l-.007.01-.007.01h-.013a3.41 3.41 0 01-4.752-4.89l.293-.29a6.238 6.238 0 00-8.7-8.94l-25.528 28.08c-11.002 12.114-10.56 30.731 1.005 42.31zm75.6-71.35a30.658 30.658 0 1140.521 40.56 3.411 3.411 0 01-2.805-6.22 23.85 23.85 0 10-31.5-31.53 3.41 3.41 0 11-6.216-2.81z"></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <span>Nhận tiền qua tài khoản ngân hàng<br>ngay sau khi hồ sơ được duyệt</span>
+                        </div>
+                    </li>
+                </div>
+
+                <div class="profit-list__half1">
+                    <li class="profit-item1">
+                        <div class="text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="70" height="70" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 2048 2048"><defs><style type="text/css" fill="#ffc800"><![CDATA[ .fil0 {fill:none}  .fil1 {fill:#ffc800;fill-rule:nonzero}  ]]></style></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"/><rect class="fil0" width="2048" height="2048"/><g id="_445077408"><rect id="_444487808" class="fil0" x="255.996" y="255.996" width="1536" height="1536"/><g><path id="_444486272" class="fil1" d="M1486.9 1362.28c0,-139.942 -60.9721,-311.361 -157.902,-440.683 -81.9957,-109.399 -189.144,-187.611 -305.001,-187.611 -115.854,0 -223.002,78.2115 -304.997,187.612 -96.9296,129.323 -157.901,300.74 -157.901,440.681 0,123.073 49.0418,197.743 128.327,241.355 83.9918,46.2 202.663,60.3591 334.571,60.3591 131.91,0 250.583,-14.1591 334.575,-60.3591 79.2863,-43.6122 128.328,-118.282 128.328,-241.355zm-106.902 -478.934c104.911,139.97 170.903,326.274 170.903,478.934 0,150.253 -61.7481,242.443 -161.578,297.356 -95.1249,52.3241 -223.908,68.3599 -365.326,68.3599 -141.415,0 -270.197,-16.0358 -365.322,-68.3599 -99.8292,-54.913 -161.577,-147.104 -161.577,-297.356 0,-152.661 65.9918,-338.962 170.902,-478.933 93.2493,-124.415 217.801,-213.363 355.998,-213.363 138.199,0 262.751,88.9477 356.001,213.362z"/><path id="_444485024" class="fil1" d="M1164.36 384.966l-125.28 66.2682 -14.876 7.86851 -14.8736 -7.86851 -125.61 -66.4453 59.5595 198.873c8.09174,-1.7941 16.265,-3.32953 24.515,-4.60866 19.2626,-2.98465 38.08,-4.48229 56.4107,-4.48229 18.5244,0 37.0536,1.42087 55.5556,4.24961 8.02323,1.22717 16.0819,2.73898 24.1736,4.53662l60.4252 -198.391zm-140.154 1.9004l111.891 -59.1863c15.8539,-8.38701 32.6339,-9.19135 47.5843,-4.63937 8.1189,2.47205 15.587,6.52205 21.9555,11.778 6.49843,5.36221 11.941,11.9504 15.8728,19.3854 7.26024,13.7291 9.60946,30.3461 4.35473,47.6055l-69.8989 229.497 -9.33662 30.6544 -30.5386 -9.40513c-14.9315,-4.59804 -30.2173,-8.09764 -45.8292,-10.4847 -15.2327,-2.32914 -30.5918,-3.49843 -46.0548,-3.49843 -16.1386,0 -31.7008,1.16339 -46.6595,3.48071 -15.2421,2.36221 -30.7524,6.00827 -46.4977,10.9287l-30.8362 9.6378 -9.2882 -31.0122 -68.9682 -230.288c-5.12599,-17.113 -2.73071,-33.6414 4.52599,-47.3563 3.95906,-7.47993 9.4193,-14.0799 15.9248,-19.4232 6.56339,-5.39056 14.1024,-9.4819 22.154,-11.8937 14.8335,-4.44095 31.5036,-3.56457 47.328,4.80709l112.317 59.413z"/><path id="_445069008" class="fil1" d="M1045.94 1517.7l0 -58.2449 0 -9.63898 9.49253 -1.93701c31.8473,-6.49607 57.854,-20.8866 75.7926,-40.813 17.5914,-19.539 27.4689,-44.5902 27.4689,-72.8575 0,-28.6748 -7.54253,-51.8056 -23.9492,-70.9571 -17.0244,-19.8756 -43.7469,-36.065 -81.5386,-50.1969l-0.0933072 0c-29.5949,-11.3126 -49.6453,-20.9067 -62.6162,-30.6768 -15.3602,-11.5701 -21.5823,-23.5347 -21.5823,-38.1343 0,-16.1232 7.01693,-29.0847 19.8591,-38.015 11.5122,-8.00552 27.6792,-12.3957 47.4367,-12.3957 22.4516,0 41.08,3.67559 56.452,8.54174 13.1752,4.17048 23.863,9.21024 32.4874,13.5272l16.2473 -54.9048c-8.03977,-3.86457 -18.0851,-8.15316 -30.4677,-11.8618 -13.774,-4.12796 -30.4146,-7.52953 -50.3469,-8.81221l-11.1118 -0.714567 0 -11.0917 0 -50.2441 -47.9209 0 0 54.5339 0 9.56457 -9.4004 2.01024c-30.8599,6.60355 -55.663,20.4295 -72.639,39.5351 -16.6701,18.7618 -25.8709,42.8422 -25.8709,70.3359 0,32.7544 13.7102,56.3693 34.1209,74.2394 21.4559,18.7854 50.537,31.7469 79.4032,42.2823l0.00826772 -0.0259843c25.8213,9.22324 44.0847,18.5043 56.2371,29.1284 13.7563,12.0248 19.8118,25.4244 19.8118,41.6552 0,17.3457 -8.09174,31.6252 -22.4067,41.517 -12.9898,8.97757 -31.1268,14.061 -52.7162,14.061 -24.4855,0 -46.467,-4.73977 -64.6689,-10.8484 -15.7583,-5.2878 -28.6654,-11.6256 -37.8792,-16.7764l-16.2473 56.7591c11.2217,6.68859 25.65,12.5575 41.7059,17.1165 17.2937,4.90867 36.2953,8.24292 55.0843,9.39804l11.1591 0.687402 0 11.1201 0 53.1343 48.6886 0z"/></g></g></g></svg>
+                        </div>
+                        <div class="text-center">
+                            <span>Khoản vay với kỳ hạn vay linh hoạt</span>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <a class="btn btn-primary btn-xl text-uppercase btnVay" href="register.html">Đăng Ký Vay!</a>
+<!--        <a class="btn btn-primary btn-xl text-uppercase" href="formRegisterLoan.html">Đăng Ký Vay!</a>-->
         </div>
     </div>
 </section>
-<!-- Footer-->
+
 <footer class="footer py-4">
     <div class="container">
         <div class="row align-items-center">
@@ -153,20 +310,20 @@
                 <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="col-lg-4 text-lg-end">
-                <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                <a class="link-dark text-decoration-none me-3" href="#!">Chính sách bảo mật</a>
+                <a class="link-dark text-decoration-none" href="#!">Điều khoản sử dụng</a>
             </div>
         </div>
     </div>
 </footer>
+
+<div id="goTop">
+    <img src="assets/img/arrow-1.png" alt="arrow" />
+</div>
 </body>
-<!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 <script src="js/scripts.js"></script>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<!-- * *                               SB Forms JS                               * *-->
-<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="js/index/index.js"></script>
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </html>

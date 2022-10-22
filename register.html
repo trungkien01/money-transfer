@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Đăng Nhập</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="login/images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="login/css/main.css">
+    <link rel="stylesheet" href="login/css/login_register.css">
 </head>
 <body>
-    
+<header>
+    <a href="index.html">
+        <img src="assets/img/navbar-logo.svg" alt="..." /></a>
+    </a>
+</header>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <div class="login100-form-title" style="background-image: url(login/images/bg-01.jpg);">
+                        <span class="login100-form-title-1">
+                            Đăng Ký
+                        </span>
+                <span style="color: #fff; text-align: center;">Hoàn thành bước đăng ký đơn giản và nhận ngay các ưu đãi khi vay!</span>
+            </div>
+
+            <form class="login100-form validate-form">
+                <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                    <label class="label-input100" for="username">Họ và Tên: </label>
+                    <input class="input100" type="text" name="username" id="username" placeholder="Nhập họ và tên" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+                    <label class="label-input100" for="number">Số Điện Thoại: </label>
+                    <input class="input100" type="number" name="number" id="number" placeholder="Nhập số điện thoại" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                    <label class="label-input100" for="email">Email: </label>
+                    <input class="input100" type="email" name="email" id="email" placeholder="Nhập email" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+                    <label class="label-input100" for="passwd">Mật khẩu: </label>
+                    <input class="input100" type="password" name="passwd" id="passwd" placeholder="Nhập số mật khẩu" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+                    <label class="label-input100" for="passwd1">Xác nhận mật khẩu: </label>
+                    <input class="input100" type="password" name="passwd1" id="passwd1" placeholder="Nhập lại mật khẩu" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="flex-sb-m w-full p-b-30">
+                    <div class="text-center mt-4">
+                        <span>Bạn đã có tài khoản hay chưa?</span>
+                        <a href="login.html" class="text-decoration-none">Đăng nhập</a>
+                    </div>
+                </div>
+
+                <div class="btnForm">
+                    <div class="container-login100-form-btn w-full div_left" style="margin-right: 10px">
+                        <button class="login100-form-btn div_left-btn">
+                            Đăng ký
+                        </button>
+                    </div>
+                    <div class="container-login100-form-btn w-full div_right">
+                        <a class="login100-form-btn div_right-a" style="text-decoration: none; color: #fff; font-size: 16px;" href="index.html">Trang Chủ</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <img src="assets/img/navbar-logo.svg" alt="..." /></a>
+</footer>
 </body>
 </html>
